@@ -41,6 +41,8 @@
 #include "hw_interface.h"
 #include "hw_scale_drm.h"
 
+#define  DRM_MODE_FLAG_SUPPORTS_RGB		(1<<20)
+
 #define IOCTL_LOGE(ioctl, type) \
   DLOGE("ioctl %s, device = %d errno = %d, desc = %s", #ioctl, type, errno, strerror(errno))
 
